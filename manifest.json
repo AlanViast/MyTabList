@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+
+  "name": "My Tab List",
+  "description": "Show and Switching tabs",
+  "version": "1.0",
+  "icons": {
+    "16": "img/logo.png",
+    "48": "img/logo.png",
+    "128": "img/logo.png"
+  },
+  "browser_action": {
+    "default_icon": "img/logo.png",
+    "default_popup": "html/popup.html",
+    "default_title": "click me!"
+  },
+  "content_scripts": [
+     {
+       "matches": ["*://*/*"],
+       "js": ["js/jquery.js", "js/main.js"]
+     }
+   ],
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "https://ajax.googleapis.com/"
+  ]
+}

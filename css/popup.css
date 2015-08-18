@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+.bookmarkList {
+  padding: 0;
+  list-style: none;
+}
+
+.bookmarkList li {
+  padding: 5px;
+  color: #000;
+}
+
+.bookmarkList li:hover {
+  background-color: #CCC;
+}
+
+.bookmarkList li.complete {
+  color: green;
+}
